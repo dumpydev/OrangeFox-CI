@@ -11,4 +11,4 @@ task:
       memory: 20G
 
   Checks_script:
-      - curl -sL https://raw.githubusercontent.com/sarthakroy2002/my_scripts/main/AOSP/twrp-build.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Hakimi0804/OrangeFox-CI/main/pbrp-build.sh | bash
