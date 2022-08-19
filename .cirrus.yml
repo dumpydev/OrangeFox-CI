@@ -7,9 +7,12 @@ task:
   name: "Recovery Build"
   timeout_in: 120m
   container:
-      image: ghcr.io/sushrut1101/docker:arch
+      # image: ghcr.io/sushrut1101/docker:arch
+      image: ubuntu:latest
       cpu: 8
       memory: 20G
 
   Checks_script:
+      - apt update
+      - apt install curl
       - curl -sL https://raw.githubusercontent.com/Hakimi0804/scripts/main/builds/mkpbrp_RMX2151.sh | bash
