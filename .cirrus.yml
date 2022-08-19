@@ -1,6 +1,7 @@
 env:
     # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
+    TOKEN: ENCRYPTED[6d518771e557b56baebb2ede3d91059daa8f1b7750843a0875a5cfc9613595b78879dfafd75d4f058ae3b9927878e1d5]
 
 task:
   name: "Recovery Build"
@@ -11,4 +12,4 @@ task:
       memory: 20G
 
   Checks_script:
-      - curl -sL https://raw.githubusercontent.com/Hakimi0804/OrangeFox-CI/main/pbrp-build.sh | bash
+      - curl -sL https://raw.githubusercontent.com/Hakimi0804/scripts/main/builds/mkpbrp_RMX2151.sh | bash
