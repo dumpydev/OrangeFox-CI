@@ -13,6 +13,6 @@ task:
       memory: 20G
 
   Checks_script:
-      - apt update
-      - apt install curl
+      - apt -y update
+      - apt -y install curl
       - curl -sL https://raw.githubusercontent.com/Hakimi0804/scripts/main/builds/mkpbrp_RMX2151.sh | bash
