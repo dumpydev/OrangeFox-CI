@@ -20,6 +20,10 @@ repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
 
 git clone "$DT_LINK" --depth=1 --single-branch -b "$DT_BRANCH" "$DT_PATH"
 
+# Add for the unified commit
+mv device/realme/RMX2001/omni_{RM6785,RMX2001}.mk
+sed -i 's/RM6785/RMX2001/g' device/realme/RMX2001/*.mk
+
 . build/envsetup.sh && \
     lunch "omni_$DEVICE-eng" && \
     make -j8 pbrp
