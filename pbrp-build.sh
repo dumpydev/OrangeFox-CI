@@ -2,7 +2,7 @@
 
 # Constants
 MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git"
-MANIFEST_BRANCH="android-12.1"
+MANIFEST_BRANCH="android-11.0"
 DEVICE="RMX2001"
 DT_LINK="https://github.com/PitchBlackRecoveryProject/android_device_realme_RMX2001-pbrp"
 DT_BRANCH="android-12.1-cirrus"
